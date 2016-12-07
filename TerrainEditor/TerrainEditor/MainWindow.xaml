@@ -1,0 +1,31 @@
+﻿<Window x:Class="TerrainEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TerrainEditor"
+        mc:Ignorable="d"
+        Title="Terrain editor" Height="400" Width="600"
+        Loaded="Window_Loaded"
+        MouseMove="Window_MouseMove"
+        KeyDown="Window_KeyDown"
+        MouseDown="Window_MouseDown">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="_Open BMP" Click="BMP_Open" />
+                <Separator />
+                <MenuItem Header="_Open XML" Click="XML_Open" />
+                <MenuItem Header="_Save XML" Click="XML_Save" />
+                <Separator />
+                <MenuItem Header="_Exit" Click="Exit" />
+            </MenuItem>
+            <MenuItem Header="_Help">
+                <MenuItem Header="_About" />
+            </MenuItem>
+        </Menu>
+
+        <!-- Viewport3D is the rendering surface. -->
+        <Viewport3D Name="myViewport3D" DockPanel.Dock="Bottom" />
+    </DockPanel>
+</Window>
