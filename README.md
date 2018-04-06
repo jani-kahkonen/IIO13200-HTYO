@@ -1,5 +1,6 @@
 # IIO13200-HTYO
-# Harjoitustyö
+NET-ohjelmointi harjoitustyö
+# Kuvaus
 Terrain editor
 # Tekijä
 Jani Kähkönen
